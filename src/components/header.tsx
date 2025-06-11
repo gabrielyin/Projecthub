@@ -1,4 +1,4 @@
-import { PlusCircle, Search, Bell, User, Folder } from 'lucide-react';
+import { Search, Bell, User, Folder } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -30,13 +30,6 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center space-x-4">
-            <button
-              className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-              <PlusCircle className="w-5 h-5" />
-              <span className="font-medium">New Project</span>
-            </button>
-            
             <button className="p-2 text-gray-400 hover:text-gray-600 transition-colors duration-200">
               <Bell className="w-6 h-6" />
             </button>

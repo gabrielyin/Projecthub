@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const features = [
@@ -96,14 +97,14 @@ export default function Home() {
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
               <div className='space-x-2'>
                 <Link href={"/login"}>
-                  <button className="btn btn-soft btn-primary">
+                  <Button variant={"outline"}>
                     Login
-                  </button>
+                  </Button>
                 </Link>
                 <Link href={"/signup"}>
-                  <button className="btn btn-primary">
+                  <Button>
                     Get Started
-                  </button>
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -133,14 +134,14 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="btn btn-primary btn-xl">
+                <Button size={"lg"}>
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button className="btn btn-soft btn-default btn-xl">
+                </Button>
+                <Button size={"lg"} variant={"outline"}>
                   <Play className="w-5 h-5 mr-2" />
                   Watch Demo
-                </button>
+                </Button>
               </div>
 
               <div className="flex items-center space-x-6 text-sm text-gray-500">
@@ -287,12 +288,14 @@ export default function Home() {
             Join thousands of web developers who have streamlined their workflow with ProjectHub. 
             Start your free trial today and experience the difference.
           </p>
-          <button
-            className="btn btn-xl bg-white text-blue-600 hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl group"
+          <Button
+            variant={"outline"}
+            size={"lg"}
+            className="group"
           >
             Start Your Free Trial
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Button>
           <p className="text-blue-200 text-sm mt-4">No credit card required • 14-day free trial</p>
         </div>
       </section>
